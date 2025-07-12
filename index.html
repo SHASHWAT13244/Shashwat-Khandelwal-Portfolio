@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shashwat Khandelwal | Portfolio</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <!-- Three.js Import -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/examples/js/loaders/GLTFLoader.js"></script>
+  
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="glass-nav">
+    <div class="logo">
+      <span class="neon-text">SK</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#certifications" class="nav-link">Certifications</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" class="theme-btn">
+      <i class="fas fa-moon"></i>
+    </button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <div class="hero-content">
+      <h1 class="hero-title">
+        <span class="title-line">Hello, I'm</span>
+        <span class="title-line neon-text">Shashwat Khandelwal</span>
+        <span class="title-line">Front End Web  Developer</span>
+      </h1>
+      <p class="hero-subtitle">Building immersive digital experiences with cutting-edge web technologies</p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary-btn">View Work</a>
+        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+      </div>
+    </div>
+    
+    <div class="scroll-indicator">
+      <div class="mouse"></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section glass-section">
+    <div class="section-header">
+      <h2 class="section-title">About Me</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="about-content">
+      <div class="about-text">
+           <p>As a B.Tech Computer Science student and front-end developer, I specialize in building interactive web applications with React, JavaScript, and modern CSS. My projects demonstrate expertise in creating responsive UIs, implementing AI integrations (like Gemini API), and developing full-featured applications from concept to deployment.</p>
+      
+      <p>With certifications in AWS Cloud, Java programming, and cybersecurity, I combine strong technical foundations with creative problem-solving to deliver exceptional user experiences. My work spans from AI chatbots and e-commerce platforms to data visualization tools and gaming applications.</p>
+        <div class="about-stats">
+          <div class="stat-card">
+            <div class="stat-value" data-count="12">0</div>
+            <div class="stat-label">Projects</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-value" data-count="19">0</div>
+            <div class="stat-label">Certifications</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+<!-- Skills Section -->
+<section id="skills" class="section dark-section">
+  <div class="section-header">
+    <h2 class="section-title">Skills</h2>
+    <div class="section-divider"></div>
+  </div>
+  
+  <div class="skills-container">
+    <!-- Web Development Skills -->
+    <div class="skill-category">
+      <h3 class="category-title">Web Development</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-react"></i>
+          </div>
+          <h4>ReactJS</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-js"></i>
+          </div>
+          <h4>JavaScript</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-html5"></i>
+          </div>
+          <h4>HTML5</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 95%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-css3-alt"></i>
+          </div>
+          <h4>CSS3</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 90%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Programming Languages -->
+    <div class="skill-category">
+      <h3 class="category-title">Programming</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-java"></i>
+          </div>
+          <h4>Java</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 85%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-code"></i>
+          </div>
+          <h4>Data Structures & Algorithms</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 90%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cloud & Security -->
+    <div class="skill-category">
+      <h3 class="category-title">Cloud & Security</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-aws"></i>
+          </div>
+          <h4>AWS</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 75%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h4>Cybersecurity</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 80%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tools -->
+    <div class="skill-category">
+      <h3 class="category-title">Tools</h3>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fab fa-github"></i>
+          </div>
+          <h4>GitHub</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 90%"></div>
+          </div>
+        </div>
+        <div class="skill-card">
+          <div class="skill-icon">
+            <i class="fas fa-chart-pie"></i>
+          </div>
+          <h4>Chart.js</h4>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 80%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="section glass-section">
+  <div class="section-header">
+    <h2 class="section-title">My Projects</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="projects-container">
+    <!-- 1. Promptly Chatbot -->
+    <div class="project-card">
+      <div class="project-image">
+        <div class="placeholder-image" style="background-color: #10a37f;">
+          <span>AI Chat</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3>Promptly AI Chatbot</h3>
+        <p>ChatGPT-style interface powered by Gemini API with markdown support.</p>
+        <div class="project-tech">
+          <span>JavaScript</span>
+          <span>Node.js</span>
+          <span>Gemini API</span>
+        </div>
+        <div class="project-links">
+          <a href="https://promptly-eujw.onrender.com/" target="_blank" class="project-link">Live Demo</a>
+          <a href="https://github.com/SHASHWAT13244/Promptly" target="_blank" class="project-link secondary-link">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. Anime World Blog -->
+    <div class="project-card">
+      <div class="project-image">
+        <div class="placeholder-image" style="background-color: #ff6b6b;">
+          <span>Anime</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3>Anime World Blog</h3>
+        <p>Dynamic website featuring anime updates, reviews, and community news.</p>
+        <div class="project-tech">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://shashwat13244.github.io/Anime-World-blog-website/" target="_blank" class="project-link">Live Demo</a>
+          <a href="https://github.com/SHASHWAT13244/Anime-World-blog-website" target="_blank" class="project-link secondary-link">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Travel Website -->
+    <div class="project-card">
+      <div class="project-image">
+        <div class="placeholder-image" style="background-color: #1e90ff;">
+          <span>Travel</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3>Travel Website</h3>
+        <p>Modern responsive landing page with interactive elements.</p>
+        <div class="project-tech">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://shashwat13244.github.io/Travelling-website-LANDING-PAGE-/" target="_blank" class="project-link">Live Demo</a>
+          <a href="https://github.com/SHASHWAT13244/Travelling-website-LANDING-PAGE-" target="_blank" class="project-link secondary-link">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Tic-Tac-Toe -->
+    <div class="project-card">
+      <div class="project-image">
+        <div class="placeholder-image" style="background-color: #4834d4;">
+          <span>Game</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3>Tic-Tac-Toe AI</h3>
+        <p>React game with unbeatable AI, themes, and sound effects.</p>
+        <div class="project-tech">
+          <span>React</span>
+          <span>JavaScript</span>
+          <span>CSS3</span>
+        </div>
+        <div class="project-links">
+          <a href="https://playtictacreact.netlify.app/" target="_blank" class="project-link">Live Demo</a>
+          <a href="https://github.com/SHASHWAT13244/Tic-Tac-Toe" target="_blank" class="project-link secondary-link">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Expense Tracker -->
+    <div class="project-card">
+      <div class="project-image">
+        <div class="placeholder-image" style="background-color: #6c63ff;">
+          <span>Finance</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3>Expense Tracker</h3>
+        <p>Track and visualize expenses with Chart.js integration.</p>
+        <div class="project-tech">
+          <span>React</span>
+          <span>Chart.js</span>
+          <span>Bootstrap</span>
+        </div>
+        <div class="project-links">
+          <a href="https://shashwat13244.github.io/expense-tracker/" target="_blank" class="project-link">Live Demo</a>
+          <a href="https://github.com/SHASHWAT13244/expense-tracker" target="_blank" class="project-link secondary-link">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. Sports E-commerce -->
+    <div class="project-card">
+      <div class="project-image">
+        <div class="placeholder-image" style="background-color: #a79cff;">
+          <span>Sports</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3>Sports E-commerce</h3>
+        <p>Responsive sports products platform with shopping cart.</p>
+        <div class="project-tech">
+          <span>HTML5</span>
+          <span>CSS3</span>
+          <span>JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://shashwat13244.github.io/Sports-E-commerce-/" target="_blank" class="project-link">Live Demo</a>
+          <a href="https://github.com/SHASHWAT13244/Sports-E-commerce-" target="_blank" class="project-link secondary-link">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. To-Do List -->
+    <div class="project-card">
+      <div class="project-image">
+        <div class="placeholder-image" style="background-color: #d6ccff;">
+          <span>Tasks</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3>To-Do List App</h3>
+        <p>Task manager application with core web technologies.</p>
+        <div class="project-tech">
+          <span>JavaScript</span>
+          <span>CSS3</span>
+          <span>HTML5</span>
+        </div>
+        <div class="project-links">
+          <a href="https://shashwat13244.github.io/-To-Do-List-App/" target="_blank" class="project-link">Live Demo</a>
+          <a href="https://github.com/SHASHWAT13244/-To-Do-List-App" target="_blank" class="project-link secondary-link">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. Music Player -->
+    <div class="project-card">
+      <div class="project-image">
+        <div class="placeholder-image" style="background-color: #4834d4;">
+          <span>Music</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3>Music Player</h3>
+        <p>Sleek audio player with playlist functionality.</p>
+        <div class="project-tech">
+          <span>JavaScript</span>
+          <span>CSS3</span>
+          <span>HTML5</span>
+        </div>
+        <div class="project-links">
+          <a href="https://shashwat13244.github.io/music-player/" target="_blank" class="project-link">Live Demo</a>
+          <a href="https://github.com/SHASHWAT13244/music-player" target="_blank" class="project-link secondary-link">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 9. Image Gallery -->
+    <div class="project-card">
+      <div class="project-image">
+        <div class="placeholder-image" style="background-color: #6c63ff;">
+          <span>Gallery</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3>Image Gallery</h3>
+        <p>Responsive gallery with lightbox functionality.</p>
+        <div class="project-tech">
+          <span>JavaScript</span>
+          <span>CSS3</span>
+          <span>HTML5</span>
+        </div>
+        <div class="project-links">
+          <a href="https://shashwat13244.github.io/image-gallery/" target="_blank" class="project-link">Live Demo</a>
+          <a href="https://github.com/SHASHWAT13244/image-gallery" target="_blank" class="project-link secondary-link">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 10. Simple Calculator -->
+    <div class="project-card">
+      <div class="project-image">
+        <div class="placeholder-image" style="background-color: #a79cff;">
+          <span>Calc</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3>Simple Calculator</h3>
+        <p>Functional calculator with keyboard support.</p>
+        <div class="project-tech">
+          <span>JavaScript</span>
+          <span>CSS3</span>
+          <span>HTML5</span>
+        </div>
+        <div class="project-links">
+          <a href="https://shashwat13244.github.io/simple-calculator/" target="_blank" class="project-link">Live Demo</a>
+          <a href="https://github.com/SHASHWAT13244/simple-calculator" target="_blank" class="project-link secondary-link">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 11. AI Chatbot -->
+    <div class="project-card">
+      <div class="project-image">
+        <div class="placeholder-image" style="background-color: #d6ccff;">
+          <span>Chatbot</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3>AI Chatbot</h3>
+        <p>ChatGPT-inspired conversational interface.</p>
+        <div class="project-tech">
+          <span>JavaScript</span>
+          <span>CSS3</span>
+          <span>HTML5</span>
+        </div>
+        <div class="project-links">
+          <a href="https://chatgpt-shashwat13244s-projects.vercel.app/" target="_blank" class="project-link">Live Demo</a>
+          <a href="https://github.com/SHASHWAT13244/ChatGPT-Clone" target="_blank" class="project-link secondary-link">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 12. Nexus Hotels -->
+    <div class="project-card">
+      <div class="project-image">
+        <div class="placeholder-image" style="background-color: #4834d4;">
+          <span>Hotels</span>
+        </div>
+      </div>
+      <div class="project-content">
+        <h3>Nexus Hotels</h3>
+        <p>Responsive hotel booking website with modern UI.</p>
+        <div class="project-tech">
+          <span>JavaScript</span>
+          <span>CSS3</span>
+          <span>HTML5</span>
+        </div>
+        <div class="project-links">
+          <a href="https://nexus-hotels-website.onrender.com/" target="_blank" class="project-link">Live Demo</a>
+          <a href="https://github.com/SHASHWAT13244/Nexus-Hotels-Website" target="_blank" class="project-link secondary-link">
+            <i class="fab fa-github"></i> Code
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="section glass-section">
+    <div class="section-header">
+      <h2 class="section-title">Certifications</h2>
+      <div class="section-divider"></div>
+    </div>
+    
+    <div class="certifications-grid">
+      <!-- AWS Certification -->
+      <div class="certification-card">
+        <div class="certification-icon">
+          <i class="fab fa-aws"></i>
+        </div>
+        <div class="certification-content">
+          <h3>AWS Academy Cloud Foundations</h3>
+          <p>Amazon Web Services (AWS)</p>
+          <a href="certificates/aws.pdf" target="_blank" class="certification-link">View Certificate</a>
+        </div>
+      </div>
+
+      <!-- Java Certification -->
+      <div class="certification-card">
+        <div class="certification-icon">
+          <i class="fab fa-java"></i>
+        </div>
+        <div class="certification-content">
+          <h3>Programming in Java</h3>
+          <p>NPTEL</p>
+          <a href="certificates/Programming In Java.pdf" target="_blank" class="certification-link">View Certificate</a>
+        </div>
+      </div>
+
+      <!-- GeeksforGeeks Certification -->
+      <div class="certification-card">
+        <div class="certification-icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <div class="certification-content">
+          <h3>160 Days of Problem Solving</h3>
+          <p>GeeksforGeeks</p>
+          <a href="certificates/geekforgeeks.pdf" target="_blank" class="certification-link">View Certificate</a>
+        </div>
+      </div>
+
+      <!-- Zscaler Certification -->
+      <div class="certification-card">
+        <div class="certification-icon">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="certification-content">
+          <h3>Fundamentals of Cybersecurity</h3>
+          <p>Zscaler (EDU-102)</p>
+          <a href="certificates/zscalar.pdf" target="_blank" class="certification-link">View Certificate</a>
+        </div>
+      </div>
+
+      <!-- Google AI-ML Certification -->
+      <div class="certification-card">
+        <div class="certification-icon">
+          <i class="fas fa-robot"></i>
+        </div>
+        <div class="certification-content">
+          <h3>AI-ML Virtual Internship</h3>
+          <p>Google for Developers & India Edu</p>
+          <a href="certificates/SHASHWAT KHANDELWAL 729773.pdf" target="_blank" class="certification-link">View Certificate</a>
+        </div>
+      </div>
+
+      <!-- Cisco Certification -->
+      <div class="certification-card">
+        <div class="certification-icon">
+          <i class="fas fa-network-wired"></i>
+        </div>
+        <div class="certification-content">
+          <h3>Introduction to Cybersecurity</h3>
+          <p>Cisco Networking Academy</p>
+          <a href="certificates/cisco.pdf" target="_blank" class="certification-link">View Certificate</a>
+        </div>
+      </div>
+
+      <!-- LetsUpgrade Certification -->
+      <div class="certification-card">
+        <div class="certification-icon">
+          <i class="fab fa-html5"></i>
+        </div>
+        <div class="certification-content">
+          <h3>HTML & CSS Bootcamp</h3>
+          <p>LetsUpgrade</p>
+          <a href="certificates/css-bootcamp.pdf" target="_blank" class="certification-link">View Certificate</a>
+        </div>
+      </div>
+
+      <!-- Infosys Certifications (Collapsible) -->
+    <div class="certification-card collapsible">
+  <div class="certification-header">
+    <div class="certification-icon">
+      <i class="fas fa-building"></i>
+    </div>
+    <h3>Infosys Springboard (12 Certificates)</h3>
+    <button class="collapse-toggle">Show All <i class="fas fa-chevron-down"></i></button>
+  </div>
+  <div class="collapse-content">
+    <!-- Web Development -->
+    <div class="category-title">Web Development</div>
+    <div class="certification-subcard">
+      <i class="fab fa-react"></i>
+      <h4>ReactJS</h4>
+      <a href="certificates/infosys reactjs.pdf" target="_blank" class="certification-link">View</a>
+    </div>
+    
+    <div class="certification-subcard">
+      <i class="fab fa-html5"></i>
+      <h4>HTML5</h4>
+      <a href="certificates/infoysys.pdf" target="_blank" class="certification-link">View</a>
+    </div>
+    
+    <div class="certification-subcard">
+      <i class="fab fa-css3-alt"></i>
+      <h4>CSS3</h4>
+      <a href="certificates/infosys css.pdf" target="_blank" class="certification-link">View</a>
+    </div>
+    
+    <div class="certification-subcard">
+      <i class="fab fa-js"></i>
+      <h4>JavaScript</h4>
+      <a href="certificates/infosys javascript.pdf" target="_blank" class="certification-link">View</a>
+    </div>
+    
+    <!-- AI/ML -->
+    <div class="category-title">Artificial Intelligence</div>
+    <div class="certification-subcard">
+      <i class="fas fa-brain"></i>
+      <h4>Introduction to AI</h4>
+      <a href="certificates/infosys artificial intelligence.pdf" target="_blank" class="certification-link">View</a>
+    </div>
+    
+    <div class="certification-subcard">
+      <i class="fas fa-database"></i>
+      <h4>Data Science</h4>
+      <a href="certificates/infosys Introduction to Data Science.pdf" target="_blank" class="certification-link">View</a>
+    </div>
+    
+    <div class="certification-subcard">
+      <i class="fas fa-network-wired"></i>
+      <h4>Deep Learning for Developers</h4>
+      <a href="certificates/infosys Deep Learning for Developers.pdf" target="_blank" class="certification-link">View</a>
+    </div>
+    
+    <div class="certification-subcard">
+      <i class="fas fa-project-diagram"></i>
+      <h4>Introduction to Deep Learning</h4>
+      <a href="certificates/infosys Introduction to Deep Learning.pdf" target="_blank" class="certification-link">View</a>
+    </div>
+    
+    <div class="certification-subcard">
+      <i class="fas fa-language"></i>
+      <h4>Natural Language Processing</h4>
+      <a href="certificates/infosys Introduction to Natural Language Processing.pdf" target="_blank" class="certification-link">View</a>
+    </div>
+    
+    <div class="certification-subcard">
+      <i class="fas fa-robot"></i>
+      <h4>OpenAI GPT Models</h4>
+      <a href="certificates/infosys Introduction to OpenAI GPT Models.pdf" target="_blank" class="certification-link">View</a>
+    </div>
+    
+    <div class="certification-subcard">
+      <i class="fas fa-eye"></i>
+      <h4>Computer Vision 101</h4>
+      <a href="certificates/infosys Computer Vision 101.pdf" target="_blank" class="certification-link">View</a>
+    </div>
+    
+    <!-- Automation -->
+    <div class="category-title">Automation</div>
+    <div class="certification-subcard">
+      <i class="fas fa-cogs"></i>
+      <h4>Robotic Process Automation</h4>
+      <a href="certificates/infosys Introduction to Robotic Process Automation.pdf" target="_blank" class="certification-link">View</a>
+    </div>
+  </div>
+</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section dark-section">
+    <div class="section-header">
+      <h2 class="section-title">Get In Touch</h2>
+      <div class="section-divider"></div>
+    </div>
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3>Let's Connect</h3>
+        <p>I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.</p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/shashwat-khandelwal-a0564532b/" target="_blank" class="social-link">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://github.com/shashwat13244" target="_blank" class="social-link">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="mailto:your-email@example.com" class="social-link">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn primary-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="neon-text">SK</span>
+      </div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="footer-copy">
+        &copy; 2025 Shashwat Khandelwal. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
