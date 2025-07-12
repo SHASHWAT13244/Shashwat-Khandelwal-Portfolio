@@ -6,6 +6,7 @@
 [![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](#)
 [![Responsive](https://img.shields.io/badge/Responsive-Design-00C896?style=for-the-badge)](#)
 
+
 ---
 
 A cutting-edge **portfolio website** showcasing my front-end development skills through interactive elements, smooth animations, and modern UI design principles.
@@ -110,7 +111,7 @@ Shashwat Khandelwal
 🎓 B.Tech Computer Science Student | 💻 Front-End Developer  
 🔗 [GitHub](https://github.com/SHASHWAT13244)  
 🔗 [LinkedIn](https://www.linkedin.com/in/shashwat-khandelwal-a0564532b/)  
-📧 [Email](mailto:your-email@example.com)
+
 
 ---
 
