@@ -5,6 +5,7 @@
 [![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](#)
 [![GSAP](https://img.shields.io/badge/GSAP-88CE02?style=for-the-badge&logo=greensock&logoColor=white)](#)
 [![Responsive](https://img.shields.io/badge/Responsive-Design-00C896?style=for-the-badge)](#)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-ff69b4?style=for-the-badge&logo=github)](https://shashwat13244.github.io/Shashwat-Khandelwal-Portfolio/)
 
 
 ---
@@ -104,6 +105,10 @@ portfolio/
    - PDF viewing
    - Organization by category
 
+---
+---
+🌐 Live Demo
+🔗 https://shashwat13244.github.io/Shashwat-Khandelwal-Portfolio/
 ---
 
 🧑‍💻 **Author**  
